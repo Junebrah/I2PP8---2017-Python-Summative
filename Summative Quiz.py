@@ -3,67 +3,154 @@ score = 0
 def questionA(x):  #this is a function where a. is the only correct answer
     global score
     answer = input(x)    #the question can be addded as a parameter here
-    if answer.lower() == "a":
-        print("""
+    while True:
+        if answer.lower() == "a":
+            print("""
 Correct!""")
-        score = score + 1
-        print("""
+            score = score + 1
+            print("""
 Your current score is""",score)
+            break
 
-    else:
-        print("""
+        elif answer.lower() == "b":
+            print("""
 Incorrect!""")
-        print("""
+            print("""
 Your current score is""",score)
+            break
 
-def questionB(y):   #this is a function where b. is the only correct answer
+        elif answer.lower() == "c":
+            print("""
+Incorrect!""")
+            print("""
+Your current score is""",score)
+            break
+
+        elif answer.lower() == "d":
+            print("""
+Incorrect!""")
+            print("""
+Your current score is""",score)
+            break
+
+        else:
+            print("""
+Please type in a valid answer.""")
+            return questionA(x)
+
+def questionB(y):  #this is a function where a. is the only correct answer
     global score
-    answer = input(y)
-    if answer.lower() == "b":
-        print("""
+    answer = input(y)    #the question can be addded as a parameter here
+    while True:
+        if answer.lower() == "b":
+            print("""
 Correct!""")
-        score = score + 1
-        print("""
+            score = score + 1
+            print("""
 Your current score is""",score)
+            break
 
-
-    else:
-        print("""
+        elif answer.lower() == "a":
+            print("""
 Incorrect!""")
-        print("""
+            print("""
 Your current score is""",score)
+            break
 
-def questionC(z):   #this is a function where c. is the only correct answer
+        elif answer.lower() == "c":
+            print("""
+Incorrect!""")
+            print("""
+Your current score is""",score)
+            break
+
+        elif answer.lower() == "d":
+            print("""
+Incorrect!""")
+            print("""
+Your current score is""",score)
+            break
+
+        else:
+            print("""
+Please type in a valid answer.""")
+            return questionB(y)
+
+def questionC(z):  #this is a function where a. is the only correct answer
     global score
-    answer = input(z)
-    if answer.lower() == "c":
-        print("""
+    answer = input(z)    #the question can be addded as a parameter here
+    while True:
+        if answer.lower() == "c":
+            print("""
 Correct!""")
-        score = score + 1
-        print("""
+            score = score + 1
+            print("""
 Your current score is""",score)
+            break
 
-    else:
-        print("""
+        elif answer.lower() == "b":
+            print("""
 Incorrect!""")
-        print("""
+            print("""
 Your current score is""",score)
+            break
 
-def questionD(h):   #this is a function where d. is the only correct answer
+        elif answer.lower() == "a":
+            print("""
+Incorrect!""")
+            print("""
+Your current score is""",score)
+            break
+
+        elif answer.lower() == "d":
+            print("""
+Incorrect!""")
+            print("""
+Your current score is""",score)
+            break
+
+        else:
+            print("""
+Please type in a valid answer.""")
+            return questionC(z)
+
+def questionD(a):  #this is a function where a. is the only correct answer
     global score
-    answer = input(h)
-    if answer.lower() == "d":
-        print("""
+    answer = input(a)    #the question can be addded as a parameter here
+    while True:
+        if answer.lower() == "d":
+            print("""
 Correct!""")
-        score = score + 1
-        print("""
+            score = score + 1
+            print("""
 Your current score is""",score)
+            break
 
-    else:
-        print("""
+        elif answer.lower() == "a":
+            print("""
 Incorrect!""")
-        print("""
+            print("""
 Your current score is""",score)
+            break
+
+        elif answer.lower() == "b":
+            print("""
+Incorrect!""")
+            print("""
+Your current score is""",score)
+            break
+
+        elif answer.lower() == "c":
+            print("""
+Incorrect!""")
+            print("""
+Your current score is""",score)
+            break
+
+        else:
+            print("""
+Please type in a valid answer.""")
+            return questionD(a)
 
 question1 = """
 1. How many planets are there in our solar system?
