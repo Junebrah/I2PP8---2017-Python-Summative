@@ -36,9 +36,9 @@ Your current score is""",score)
         else:
             print("""
 Please type in a valid answer.""")
-            return questionA(x)
+            return questionA(x)   #repeats the function
 
-def questionB(y):  #this is a function where a. is the only correct answer
+def questionB(y):  #this is a function where b. is the only correct answer
     global score
     answer = input(y)    #the question can be addded as a parameter here
     while True:
@@ -74,9 +74,9 @@ Your current score is""",score)
         else:
             print("""
 Please type in a valid answer.""")
-            return questionB(y)
+            return questionB(y)      #repeats the function
 
-def questionC(z):  #this is a function where a. is the only correct answer
+def questionC(z):  #this is a function where c. is the only correct answer
     global score
     answer = input(z)    #the question can be addded as a parameter here
     while True:
@@ -112,9 +112,9 @@ Your current score is""",score)
         else:
             print("""
 Please type in a valid answer.""")
-            return questionC(z)
+            return questionC(z)    #repeats the function
 
-def questionD(a):  #this is a function where a. is the only correct answer
+def questionD(a):  #this is a function where d. is the only correct answer
     global score
     answer = input(a)    #the question can be addded as a parameter here
     while True:
@@ -150,7 +150,7 @@ Your current score is""",score)
         else:
             print("""
 Please type in a valid answer.""")
-            return questionD(a)
+            return questionD(a)   #repeats the function
 
 question1 = """
 1. How many planets are there in our solar system?
@@ -327,7 +327,7 @@ questionB(question13)
 questionB(question14)
 questionD(question15)
 
-if score > 14:
+if score > 14:     #this is to show the grade you get at the end
     print("Your score was",score,", you get an A. Congrats!")
 elif score >= 12:
     print("Your score was",score,", you get an A-. Pretty good!")
